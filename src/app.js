@@ -98,7 +98,7 @@ class Game {
     }
 
         gameOver() {
-            if ( this.car.x < 0 || this.car.x > 10|| this.car.y < 0|| this.car.y > 10){
+            if ( this.car.x < 0 || this.car.x > 10|| this.car.y < 0|| this.car.y > 10){ //!
                 clearInterval(this.idSetInterval);
                 const over = document.getElementById("game-over");
                 this.game.style.display = "none";
