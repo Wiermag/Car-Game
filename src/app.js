@@ -51,11 +51,9 @@ class Game {
             } else if (this.car.direction === "down") {
                 this.car.y = this.car.y - 1;
             };
+         this.gameOver()
          this.showCar();
          this.checkConeCollision();
-       
-         this.gameOver()
-            
         };
         turnCar(event) {
             switch (event.which) {
@@ -75,7 +73,6 @@ class Game {
         };
         checkConeCollision() {
             if (this.car.x === this.cone.x && this.car.y === this.cone.y){
-  
                 this.score+=1;
                 let newScore = document.querySelector('span');
                 newScore.innerText = this.score
@@ -98,7 +95,7 @@ class Game {
     }
 
         gameOver() {
-            if ( this.car.x < 0 || this.car.x > 10|| this.car.y < 0|| this.car.y > 10){ //!
+            if ( (this.car.x < 0 || this.car.x > 9 ) || (this.car.y < 0 || this.car.y > 9)){ //!
                 clearInterval(this.idSetInterval);
                 const over = document.getElementById("game-over");
                 this.game.style.display = "none";

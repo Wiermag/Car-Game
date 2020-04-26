@@ -83,11 +83,12 @@ section#score-board div {
    span {
       display: flex;
       justify-content: center;
+      font-weight: 900;
       align-items: center;
       height: 100%;
-      font-size:10rem;
-      color: white;
-      font-family: 'Amatic SC', cursive;
+      font-size:15rem;
+      color: #f23557;
+      font-family: 'Amatic SC';
     } 
   }
 
