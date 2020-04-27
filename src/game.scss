@@ -53,15 +53,17 @@ section#start {
       }
     }
   }
-
+.game {
+  height: 100vh;
+}
 #board {
   width: 800px;
-  height: 650px;
-  margin: 1em auto; 
+  height: 100%;
+  margin: 0 auto; 
     div {    
       width: 64px;
       height: 64px;
-      margin : 5px ;
+      margin : 4px 5px ;
       float: left;
       border-radius: 50%;
       background-color:white;

@@ -11,7 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, `build`)
   },
   devServer: {
-    contentBase: [path.join(__dirname, 'build'), path.join(__dirname, 'public')],
+    contentBase: [path.join(__dirname, 'build')],
     compress: true,
     port: 3001
   },
@@ -42,6 +42,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|gif|png|svg)$/,
+        exclude: /build/,
         loader: "file-loader",
       }
       
