@@ -8,6 +8,8 @@
 ## About Project 
 A simple and colorful game created using html, js and scss.
 
+https://wiermag.github.io/Car-Game/
+
 Use the arrows to drive the car ! 
 You have to break so many bollard as possible !
 
